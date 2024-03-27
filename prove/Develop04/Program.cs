@@ -26,7 +26,7 @@ class Program
                     breathingActivity.Run();
                     break;
                 case "2":
-                    var listeningActivity = new ListingActivity(prompts, "Active Listing", "Engage with others", 10);
+                    var listeningActivity = new ListingActivity(prompts, "Listing Activity", "Engage with others", 10);
                     listeningActivity.Run();
                     break;
                 case "3":
