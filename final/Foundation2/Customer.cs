@@ -9,7 +9,17 @@ class Customer
 
     public Address GetAddress() => _address;
     public void SetAddress(Address address) => _address = address;
-    public bool IsInUSA() => _address.IsInUSA();
+    public bool IsInUSA() 
+    {
+        if (_address != null)
+        {
+            return _address.IsInUSA();
+        }
+        else
+        {   
+            return false;
+        }
+    }
 
     
 

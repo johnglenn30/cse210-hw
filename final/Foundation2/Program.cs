@@ -34,19 +34,19 @@ class Program
 
         Customer customer= new Customer();
         customer.Name("Johnny Bravo");
-        customer.SetAddress(address);
-
-        Customer customer1 = new Customer();
-        customer.Name("Jackie Chan");
         customer.SetAddress(address1);
 
+        Customer customer1 = new Customer();
+        customer1.Name("Jackie Chan");
+        customer1.SetAddress(address);
+
         Order order1 = new Order();
-        order1.SetCustomer(customer1);
-        order1.AddProduct(product2);
+        order1.SetCustomer(customer);
+        order1.AddProduct(product1);
 
         Order order= new Order();
-        order.SetCustomer(customer);
-        order.AddProduct(product1);
+        order.SetCustomer(customer1);
+        order.AddProduct(product2);
         
         Console.WriteLine("\nProduct:");
         Console.WriteLine(order.GetProductLabel());
